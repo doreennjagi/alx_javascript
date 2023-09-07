@@ -20,4 +20,4 @@ class Rectangle {
         }
     }
     }
-    module.exports= rectangle
+    module.exports= Rectangle
