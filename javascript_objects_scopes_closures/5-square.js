@@ -2,7 +2,7 @@
 /**
  * Square class that inherits from rectangle class
  */
-const Rectangle = require('./4-rectangle');
+const Rectangle = require('./4-rectangle').default;
 
 class Square extends Rectangle {
 constructor (size) {
@@ -10,4 +10,5 @@ constructor (size) {
 }
 }
 
-module.exports = Square;
+const newLocal = module.exports;
+newLocal = Square;
