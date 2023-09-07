@@ -33,4 +33,4 @@ class Rectangle {
       this.height *= 2;
     }
 }
-export default Rectangle;
+module.exports= Rectangle;

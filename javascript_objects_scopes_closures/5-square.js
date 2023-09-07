@@ -9,6 +9,4 @@ constructor (size) {
     super(size, size);
 }
 }
-
-const newLocal = module.exports;
-newLocal = Square;
+module.exports = Square
