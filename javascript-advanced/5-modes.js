@@ -1,22 +1,20 @@
-function divideBy (firstNumber) {
-    return function (secondNumber) {
-        return secondNumber / firstNumber;
+function changeMode (size, weight, transform, background, color) {
+    return function () {
+        document.body.style.fontSize = size + 'px';
+        document.body.style.fontWeight = weight;
+        document.body.style.transform = transform;
+        document.body.style.backgroundColor = background;
+        document.body.style.color = color;
     };
 }
 
-function addBy (firstNumber) {
-    return function (secondNumber) {
-        return firstNumber + secondNumber;
-    };
+function main () {
+    const spooky = changeMode(9, 'bold', 'uppercase', 'pink', 'green');
+    const darkMode = changeMode(12, 'bold', 'capitalize', 'black', 'white');
+    const screamMode = changeMode(12, 'normal', 'lowercase', 'white', 'black');
+
+    document.getElementById('spookyButton').addEventListener('click', spooky);
+    document.getElementById('darkModeButton').addEventListener('click', darkMode);
+    document.getElementById('screamModeButton').addEventListener('click', screamMode);
+
 }
-
-// create four closures
-const addBy100 = addBy(100);
-const addBy1000 = addBy(1000);
-const divideBy10 = divideBy(10);
-const divideBy100 = divideBy(100);
-
-console.log(addBy100(20));
-console.log(divideBy10(20));
-console.log(divideBy100(200));
-console.log(addBy1000(20));
