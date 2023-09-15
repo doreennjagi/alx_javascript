@@ -1,3 +1,4 @@
+#!usr/bin/node
 // Log to the console Start of the execution queue
 console.log('Start of the execution queue');
 

@@ -1,3 +1,4 @@
+#!usr/bin/node
 function createClassRoom(numbersOfStudents) {
     function studentSeat(seat) {
     return function () {

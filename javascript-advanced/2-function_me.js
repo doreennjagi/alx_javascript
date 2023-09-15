@@ -1,3 +1,4 @@
+#!/usr/bin/node
 const alert = require('alert');
 function welcomeMessage (fullName) {
     alert('Welcome ' + fullName);

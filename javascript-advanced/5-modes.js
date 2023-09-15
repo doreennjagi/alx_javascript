@@ -1,3 +1,4 @@
+#!usr/bin/node
 function changeMode (size, weight, transform, background, color) {
     return function () {
         document.body.style.fontSize = size + 'px';

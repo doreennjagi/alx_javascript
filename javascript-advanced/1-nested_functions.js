@@ -1,3 +1,4 @@
+#!/usr/bin/node
 const globalVariable  = 'Welcome';
 
 function outer () {
